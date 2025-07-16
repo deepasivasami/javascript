@@ -72,24 +72,57 @@
 // }
 //     else{
 //         console.log(" eligible negative for not loanapprovel")
-//     }
-let o_uname ="admin";
-        let o_pass = "admin@123";
+    // }
+      
+        
+     let o_uname = "";
+        let o_pass = "";
+        debugger; 
 
         let username = prompt("enter username");
         let password = prompt("enter password");
-debugger;
-        if(o_uname ==!""){
-            
-            if(o_pass ==!""){
-                    console.log("Login successfully")
-            }else{
-                console.log("Password is wrong")
+        debugger;
+        if (o_uname === username) { 
+
+            if (o_pass === password) {
+                alert("Login successfully")
+            } else {
+                alert("Password is wrong")
             }
 
-        }else{
-            console.log("re-enter username")
-        }
+        } else {
+            if (username == "") {
+                alert("Empty username is not allowed")
+            } 
+            if (password ==""){
+                alter("password")
+            } 
+            else {
+                alert("you enter wrong username")
+            }
+
+        } 
+
+
+
+
+
+
+
+
+        debugger;
+    let a=prompt("enter the a value");
+    let b=prompt("enter the b vlaue");
+    a=Number(a);
+    b=Number (b);
+    
+    console.log(a+b);
+
+    let x=prompt("enter the x value");
+    let y=prompt("enter the b value");
+    debugger;
+    
+    console.log(x-y)
 
     </script>
 </body>
