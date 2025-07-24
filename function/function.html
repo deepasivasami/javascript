@@ -9,54 +9,97 @@
     <script>
         // function return valus and rulse switch runthe code//
 
-        function add(a,b){
-            return(a+b)
-        }
-         function sub(a,b){
-            return(a-b)
-        }
-        function mult(a,b){
-            return(a*b)
-        }
-        function div(a,b){
-            return(a/b)
-        }
-        function modulo(a,b){
-            return(a%b)
-        }
-        let ex=prompt("enter your case 1.addition,2.subraction,3.multiply,4.division,5.modulo,");
-        let first=prompt("enter the first value?");
-        let second=prompt("enter the second value");
+        // function add(a,b){
+        //     return(a+b)
+        // }
+        //  function sub(a,b){
+        //     return(a-b)
+        // }
+        // function mult(a,b){
+        //     return(a*b)
+        // }
+        // function div(a,b){
+        //     return(a/b)
+        // }
+        // function modulo(a,b){
+        //     return(a%b)
+        // }
+        // let ex=prompt("enter your case 1.addition,2.subraction,3.multiply,4.division,5.modulo,");
+        // let first=prompt("enter the first value?");
+        // let second=prompt("enter the second value");
 
-        switch(ex){
+        // switch(ex){
+        //     case"1":
+        //     let ans=add(Number(first),Number(second));
+        //     console.log(ans)
+        //     break;
+        //     case"2": 
+        //     let ans1=sub(first,second);
+        //     console.log(ans1)
+        //     break;
+        //     case"3": 
+        //     let ans2=mult(first,second);
+        //     console.log(ans2)
+        //     break;
+        //     case"4": 
+        //     let ans3=div(first,second);
+        //     console.log(ans3)
+        //     break;
+        //     case"5": 
+        //     let ans4=modulo(first,second);
+        //     console.log(ans4)
+        //     break;
+        //     default: 
+        //     console.log("invalid case number");
+        //     break;
+        // }
+        
+
+
+       function formala(x,y){
+       return(x*x+y*y+2*x*y)   
+       }    
+       function pyramid(){
+       for(i=1;i<=5;i++){
+       for(j=1;j<=i;j++){
+        document.writeln("*")
+       }
+      document.writeln("<br>")
+       }   
+       }
+       function multplyformala(l,b,h){
+         return(l*b*h)
+       }
+      function formala3(x,y){
+      return (x+y*x-y)
+
+      }
+     let experation=prompt("enter your case \n1.formala,\n2.pyramid,\n3.multplyformala,\n4.formala3,");
+     
+switch(experation){
+
             case"1":
-            let ans=add(Number(first),Number(second));
+             let x=prompt("enter the x value");
+             let y=prompt("enter the y value");
+            let ans=formala(x,y)
             console.log(ans)
             break;
-            case"2": 
-            let ans1=sub(first,second);
-            console.log(ans1)
+            case"2":
+            pyramid()
             break;
-            case"3": 
-            let ans2=mult(first,second);
-            console.log(ans2)
+             case"3":
+             let l=prompt("enter the l value");
+             let b=prompt("enter the b value");
+             let h=prompt("enter the h value");
+             let ans2=multplyformala(l,b,h);
+              console.log(ans2)
             break;
             case"4": 
-            let ans3=div(first,second);
-            console.log(ans3)
-            break;
-            case"5": 
-            let ans4=modulo(first,second);
-            console.log(ans4)
-            break;
-        }
-
-
-
-
-
-
-     
+            let x2=prompt("enter the x2 value");
+             let y2=prompt("enter the y2 value");
+             let ans3=formala3(x2,y2)
+             document.writeln(ans3)
+}
     </script>
 </body>
 </html>
