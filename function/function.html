@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function return valus and rulse switch runthe code//
+
+        function add(a,b){
+            return(a+b)
+        }
+         function sub(a,b){
+            return(a-b)
+        }
+        function mult(a,b){
+            return(a*b)
+        }
+        function div(a,b){
+            return(a/b)
+        }
+        function modulo(a,b){
+            return(a%b)
+        }
+        let ex=prompt("enter your case 1.addition,2.subraction,3.multiply,4.division,5.modulo,");
+        let first=prompt("enter the first value?");
+        let second=prompt("enter the second value");
+
+        switch(ex){
+            case"1":
+            let ans=add(Number(first),Number(second));
+            console.log(ans)
+            break;
+            case"2": 
+            let ans1=sub(first,second);
+            console.log(ans1)
+            break;
+            case"3": 
+            let ans2=mult(first,second);
+            console.log(ans2)
+            break;
+            case"4": 
+            let ans3=div(first,second);
+            console.log(ans3)
+            break;
+            case"5": 
+            let ans4=modulo(first,second);
+            console.log(ans4)
+            break;
+        }
+
+
+
+
+
+
+     
+    </script>
+</body>
+</html>
