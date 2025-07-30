@@ -7,7 +7,49 @@
 </head>
 <body>
     <script>
-        let 
-    </script>
+        let nam="Deepa7077@gmail.com"
+        let alfabat="abcdefghijklmnopqrstuvwxyz";
+        let number="12345667890"
+            let vcount=0;
+            let acount=0;
+            let ncount=0;
+            
+
+
+            for(let i=1;i<nam.length;i++){
+                if(nam[i]=="a"||nam[i]=="e"||nam[i]=="i"||nam[i]=="o"||nam[i]=="u"){
+                vcount++;
+                }
+            }
+            document.writeln("vowelse count"+vcount+"<br>");
+
+
+
+            for(let i=1;i<nam.length;i++){
+                for (let j=1;j<alfabat.length;j++){
+                    if(nam[i]==alfabat[j]){
+                        acount++;
+                    }
+                }
+            }
+             document.writeln("alfaba coumt"+acount+"<br>");
+
+
+
+             for(let i=1;i<nam.length;i++){
+                for(let j=1;j<number.length;j++){
+                    if(nam[i]==number[j]){
+                        ncount++;
+                    }
+                }
+             }
+             document.writeln("number count"+ncount+"<br>");
+   
+   let scount=nam.length-(acount+ncount);
+   document.writeln("spectarcount" ,scount)
+   
+   
+   </script>
+
 </body>
 </html>
